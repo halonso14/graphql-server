@@ -1,9 +1,11 @@
 {
-  "name": "graphql",
+  "name": "express-graphql-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,5 +13,10 @@
     "url": "git@github.com-halonso:halonso14/GraphQL.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.2.0"
+  }
 }
