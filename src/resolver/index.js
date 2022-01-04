@@ -1,3 +1,1 @@
-import personResolver from "./person.js";
-
-export default personResolver;
+export { default } from "./person.js";

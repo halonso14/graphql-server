@@ -1,3 +1,1 @@
-import personSchema from "./person.js";
-
-export default personSchema;
+export { default } from "./person.js";
