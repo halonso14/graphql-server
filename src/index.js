@@ -1,7 +1,7 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
-import personSchema from './schema/index.js';
-import personResolver from './resolver/index.js';
+import personSchema from './schema';
+import personResolver from './resolver';
 
 const app = express();
 app.use('/graphql', graphqlHTTP({
