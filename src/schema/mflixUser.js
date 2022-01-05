@@ -2,14 +2,15 @@ import { buildSchema } from 'graphql';
 
 const mflixUserSchema = buildSchema(`
   type User {
-    id: ID!,
+    _id: ID!,
     name: String!,
     email: String!,
     password: String!
   }
 
   type Query {
-    getUser(id: ID!): User
+    getAllUsers: [User]!
+    getUserByName(name: String!): User
   }
 `);
 

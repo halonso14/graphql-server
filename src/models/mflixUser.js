@@ -19,4 +19,4 @@ const UserSchema = new Schema({
     },
 });
 
-export default model('sample_mflix.users', UserSchema);
+export default model('users', UserSchema);
