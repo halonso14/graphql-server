@@ -1,1 +1,2 @@
-export { default } from "./person";
+export { default } from "./mflixUser";
+// export { default } from "./person";
