@@ -1,9 +1,7 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
-import mflixUserSchema from './schema';
-import personSchema from './schema';
-import mflixUserResolver from './resolver';
-import personResolver from './resolver';
+import { mflixUserSchema } from './graphql/schema';
+import { mflixUserResolver } from './graphql/resolver';
 import dbConnect from './models';
 dbConnect();
 

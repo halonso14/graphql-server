@@ -1,2 +1,1 @@
-export { default } from "./mflixUser";
-// export { default } from "./person";
+export { default as mflixUserResolver } from "./mflixUser";

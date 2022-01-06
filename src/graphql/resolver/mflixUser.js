@@ -1,4 +1,4 @@
-import mflixUserModel from '../models/mflixUser';
+import mflixUserModel from '../../models/mflixUser';
 
 const mflixUserResolver = {
   getAllUsers: async () => {
