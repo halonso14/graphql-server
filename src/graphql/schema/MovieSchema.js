@@ -1,6 +1,6 @@
 import { buildSchema } from 'graphql';
 
-const mflixMovieSchema = buildSchema(`
+const MovieSchema = buildSchema(`
   type Movie {
     id: ID!,
     plot: String!,
@@ -14,4 +14,4 @@ const mflixMovieSchema = buildSchema(`
   }
 `);
 
-export default mflixMovieSchema;
+export default MovieSchema;

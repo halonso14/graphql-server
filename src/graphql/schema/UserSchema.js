@@ -1,6 +1,6 @@
 import { buildSchema } from 'graphql';
 
-const mflixUserSchema = buildSchema(`
+const UserSchema = buildSchema(`
   type User {
     _id: ID!,
     name: String!,
@@ -14,4 +14,4 @@ const mflixUserSchema = buildSchema(`
   }
 `);
 
-export default mflixUserSchema;
+export default UserSchema;

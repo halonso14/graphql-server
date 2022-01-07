@@ -1,1 +1,1 @@
-export { default as mflixUserSchema } from "./mflixUser";
+export { default as UserSchema } from "./UserSchema";

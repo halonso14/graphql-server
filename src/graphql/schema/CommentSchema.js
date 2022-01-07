@@ -1,6 +1,6 @@
 import { buildSchema } from 'graphql';
 
-const mflixCommentSchema = buildSchema(`
+const CommentSchema = buildSchema(`
   type Comment {
     id: ID!,
     name: String!,
@@ -15,4 +15,4 @@ const mflixCommentSchema = buildSchema(`
   }
 `);
 
-export default mflixCommentSchema;
+export default CommentSchema;

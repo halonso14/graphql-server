@@ -1,14 +1,14 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
-import { mflixUserSchema } from './graphql/schema';
-import { mflixUserResolver } from './graphql/resolver';
-import dbConnect from './models';
+import { UserSchema } from './graphql/schema';
+import { UserResolver } from './graphql/resolver';
+import dbConnect from './mongo';
 dbConnect();
 
 const app = express();
 app.use('/graphql', graphqlHTTP({
-  schema: mflixUserSchema,
-  rootValue: mflixUserResolver,
+  schema: UserSchema,
+  rootValue: UserResolver,
   graphiql: true,
 }));
 
