@@ -1,14 +1,14 @@
-import { getMflixDBConnection } from '../../mongo';
+import { getMflixUserModel } from '../../mongo';
 
 
 const UserResolver = {
   getAllUsers: async () => {
-    const mflixDBConnection = getMflixDBConnection();
+    const mflixDBConnection = getMflixUserModel();
     return await mflixDBConnection.find();
   },
 
   getUserByName: async ({ name }) => {
-    const mflixDBConnection = getMflixDBConnection();
+    const mflixDBConnection = getMflixUserModel();
     return await mflixDBConnection.findOne({ name });
   },
 };
