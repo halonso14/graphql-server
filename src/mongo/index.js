@@ -1,9 +1,9 @@
-import { createMflixDBConnection } from './connection';
+import createtDBConnection from './connection';
 import userSchema from './schema/userSchema';
 
 // Connect to mongoDB 
 export function getMflixDBConnection() {
-    const mflixDBConnection = createMflixDBConnection();
+    const mflixDBConnection = createtDBConnection('mflix');
     mflixDBConnection.model('users', userSchema);
-    return mflixDBConnection;
+    return mflixDBConnection.model('users');
 }
