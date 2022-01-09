@@ -1,12 +1,15 @@
-import UserSchema from '../../mongo/schema/UserSchema';
+import { getMflixDBConnection } from '../../mongo';
+
 
 const UserResolver = {
   getAllUsers: async () => {
-    return await UserSchema.find();
+    const mflixDBConnection = getMflixDBConnection();
+    return await mflixDBConnection.model('users').find();
   },
 
   getUserByName: async ({ name }) => {
-    return await UserSchema.findOne({ name });
+    const mflixDBConnection = getMflixDBConnection();
+    return await mflixDBConnection.odel('users').findOne({ name });
   },
 };
 

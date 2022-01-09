@@ -2,8 +2,6 @@ import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import { UserSchema } from './graphql/schema';
 import { UserResolver } from './graphql/resolver';
-import dbConnect from './mongo';
-dbConnect();
 
 const app = express();
 app.use('/graphql', graphqlHTTP({

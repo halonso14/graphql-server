@@ -1,6 +1,6 @@
-import { Schema, model } from 'mongoose';
+import { Schema } from 'mongoose';
 
-const UserSchema = new Schema({
+const userSchema = new Schema({
     id: {
         type: String,
         required: true
@@ -19,4 +19,4 @@ const UserSchema = new Schema({
     },
 });
 
-export default model('users', UserSchema);
+export default userSchema;
